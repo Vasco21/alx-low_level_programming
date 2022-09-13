@@ -8,8 +8,19 @@
  * Discretion: it print character
  * return 0
  */
-
-int _putchar(char c)
+int main(void)
 {
-	return (write(1, &c, 1));
+
+	_putchar('H');
+	_putchar('e');
+	_putchar('l');
+	_putchar('l');
+	_putchar('0');
+	_putchar('W');
+	_putchar('o');
+	_putchar('r');
+	_putchar('l');
+	_putchar('d');
+	_putchar('\n');
+	return (0);
 }
