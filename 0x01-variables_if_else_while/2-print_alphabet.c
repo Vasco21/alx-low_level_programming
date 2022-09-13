@@ -14,7 +14,6 @@ int main(void)
 
 	for (c = 97; c <= 122; c++)
 		printf("%c", c);
-		printf("\n");
 
 	return (0);
 }
