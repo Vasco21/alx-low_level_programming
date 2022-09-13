@@ -3,20 +3,13 @@
 
 /**
  *
- *Main check description
+ * _putchar - writes the character
  *
- *Discretion: it print my name vasco,followed by new line.
- *return 0
+ * Discretion: it print character
+ * return 0
  */
 
-int main(void)
+int _putchar(char c)
 {
-	char name[6] = "Vasco";
-	int i;
-
-	for (i = 0; i < 6; i++)
-		_putchar(name[i]);
-	_putchar("\n");
-	
-	return (0);
+	return (write(1, &c, 1));
 }
