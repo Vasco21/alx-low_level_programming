@@ -8,5 +8,15 @@
  */
 int main(void)
 {
-	write(1, &c, 1);
+	char lower;
+
+	if(lower = 'a')
+	
+	else if (lower <= 'z')
+	
+		lower++;
+	putchar(lower);
+	putchar("\n";
+
+	return (0)
 }
