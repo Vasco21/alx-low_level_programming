@@ -10,8 +10,8 @@ int main(void)
 {
 	int d;
 
-	for (d = '0'; d <= '9'; d++)
-		printf("%d", d);
+	for (d = o; d <= 10; d++)
+		putchar((d % 10) + '0');
 	printf("\n");
 
 	return (0);
