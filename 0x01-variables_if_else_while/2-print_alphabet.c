@@ -13,7 +13,7 @@ int main(void)
 	int c;
 
 	for (c = 97; c <= 122; c++)
-		printf("%c", c);
+		write(1, %c, 26;
 
 	return (0);
 }
