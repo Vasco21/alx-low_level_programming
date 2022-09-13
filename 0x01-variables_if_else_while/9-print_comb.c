@@ -9,19 +9,18 @@
 
 int main(void)
 {
-	int com;
+	int d;
 	
-	for (com = 0; com < 10; com++)
-
+	for (d = '0'; d <= '9'; d++)
 	{
-		printf("%d", com);
-		if(com != 10)
+		putchar(d);
+		if (d != '9')
 		{
-			printf(',');
-			printf(" ");
+			putchar(',');
+			putchar(' ');
 		}
 	}
-	printf("\n");
-
+	putchar('\n');
+	
 	return (0);
 }
