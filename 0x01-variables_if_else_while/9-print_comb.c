@@ -9,13 +9,13 @@
 
 int main(void)
 {
-	char com;
+	int com;
 	
-	for (com = 0; com < 9; com++)
+	for (com = 0; com < 10; com++)
 
 	{
 		printf("%d", com);
-		if(com != 9)
+		if(com != 10)
 		{
 			printf(',');
 			printf(" ");
