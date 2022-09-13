@@ -12,7 +12,8 @@ int main(void)
 {
 	char c;i
 
-	for (c = 'a'; c <= 'z'; c++)
+	for (c = 'a'; c <= 'z'; ++c)
 		printf("%c", c);
+
 	return (0);
 }
