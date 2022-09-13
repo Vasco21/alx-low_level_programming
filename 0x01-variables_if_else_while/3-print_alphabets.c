@@ -12,7 +12,7 @@ int main(void)
 
 	if (c == 'U' || c == 'u')
 	{
-		for(c = 'A'; <= 'Z'; ++C)
+		for(c = 'A'; <= 'Z'; ++c)
 			printf("%c", c);
 	}else if (c == 'L' || c == 'l')
 	{
