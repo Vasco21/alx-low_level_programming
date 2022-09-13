@@ -11,11 +11,11 @@ int main(void)
 	int d;
 	char low;
 
-	for (d = '0'; d <= '9'; d++)
-		printf(d);
+	for (d = 0; d < 10'; d++)
+		putchar((d % 10) + '0');
 	for (low = 'a'; low <= 'f'; low++)
-		printf("%c", low);
-	printf("\n");
+		putchar(low);
+	putchar("\n");
 
 	return (0);
 }
