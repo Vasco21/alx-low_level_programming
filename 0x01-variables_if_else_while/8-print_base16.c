@@ -11,8 +11,8 @@ int main(void)
 	int d;
 	char low;
 
-	for (d = '0'; d <= '9'; d++)
-		printf("%d",d);
+	for (d = 0; d < 10; d++)
+		printf("%d", d);
 	for (low = 'a'; low <= 'f'; low++)
 		printf("%c", low);
 	printf("\n");
