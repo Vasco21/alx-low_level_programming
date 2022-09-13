@@ -11,13 +11,13 @@ int main(void)
 	int ch;
 
 	/* print uppercase letters */
-	for (ch= ‘A’; ch<= ‘Z’; ch++)
+	for (ch= 'A'; ch<= 'Z'; ch++)
 		putchar(ch);
-	 	putchar(‘\n’);
+	 	putchar('\n');
 	/* print lowercase letters */
-	for (ch= ‘a’; ch<= ‘z’; ch++)
+	for (ch= 'a'; ch<= 'z'; ch++)
 		putchar(ch);
-		putchar(‘\n’);
+		putchar('\n');
 
 	return (0);
 
