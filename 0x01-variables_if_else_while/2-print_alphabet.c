@@ -14,7 +14,7 @@ int main(void)
 
 	for (c = 'a'; c <= 'z'; c++)
 	{
-		printf(1, &c, 1);
+		printf("%c", c);
 	}
 
 	return (0);
