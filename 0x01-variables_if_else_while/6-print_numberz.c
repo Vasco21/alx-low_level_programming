@@ -14,7 +14,7 @@ int main(void)
 	{
 		int d = n % 10;
 		n = n / 10;
-		printf("%d\n", d);
+		write(1, &d, 1);
 	}
 
 	return (0);
