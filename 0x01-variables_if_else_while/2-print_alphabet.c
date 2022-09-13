@@ -12,8 +12,7 @@ int main(void)
 {
 	int c;
 
-	for (c = 97; c <= 122; c++)
-		
+	for (c = 97; c <= 122; c++)	
 		printf("%c\n", c);
 
 	return (0);
