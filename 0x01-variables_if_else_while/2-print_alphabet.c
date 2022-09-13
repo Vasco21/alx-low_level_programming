@@ -10,11 +10,11 @@ int main(void)
 {
 	char lower;
 
-	if(lower = 'a' && lower <= 'z'){
+	if (lower = 'a' && lower <= 'z'){
 		lower++;
 	}
 	putchat(lower);
-	putchar("\n")
+	putchar("\n");
 
-	return (0)
+	return (0);
 }
