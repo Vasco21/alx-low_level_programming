@@ -12,7 +12,7 @@ int main(void)
 	char low;
 
 	for (d = '0'; d <= '9'; d++)
-		printf("%d", d);
+		printf(d);
 	for (low = 'a'; low <= 'f'; low++)
 		printf("%c", low);
 	printf("\n");
