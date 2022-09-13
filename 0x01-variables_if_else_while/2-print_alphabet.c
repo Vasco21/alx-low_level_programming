@@ -6,15 +6,14 @@
  *
  * Return: Always 0 (Success)
  */
+
 int main(void)
 {
-	char lower;
+	char low;
 
-	if (lower = 'a' && lower <= 'z'){
-		lower++;
-	}
-	putchar(lower);
-	putchar("\n");
+	for (low = 'a'; low <= 'z'; low++)
+		putchar(low);
+		printf("\n");
 
 	return (0);
 }
