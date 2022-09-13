@@ -14,7 +14,7 @@ int main(void)
 
 	for (c = 'a'; c <= 'z'; c++)
 	{
-		write(1, &c, 1);
+		printf(1, &c, 1);
 	}
 
 	return (0);
