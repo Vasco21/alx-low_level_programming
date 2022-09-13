@@ -8,18 +8,17 @@
  */
 int main(void)
 {
-	char c;
+	int ch;
 
-	if (c == 'U' || c == 'u')
-	{
-		for(c = 'A'; <= 'Z'; ++c)
-			printf("%c", c);
-	}else if (c == 'L' || c == 'l')
-	{
-		for(c = 'a'; c <= 'z'; ++c)
-			printf("%c", c);
-	}else{
-		print("Error Char");
-	}
-	return (0)
+	/* print uppercase letters */
+	for (ch= ‘A’; ch<= ‘Z’; ch++)
+		putchar(ch);
+	 	putchar(‘\n’);
+	/* print lowercase letters */
+	for (ch= ‘a’; ch<= ‘z’; ch++)
+		putchar(ch);
+		putchar(‘\n’);
+
+	return (0);
+
 }
