@@ -10,11 +10,16 @@ int main(void)
 {
 	char c;
 
-	for (c = 'a'; c  <= 'z'; c++)
-		putchar(c);
-	for (c = 'A'; c <= 'Z'; c++)
-		putchar(c);
-		putchar('\n');
-
-	return (0);
+	if (c == 'U' || c == 'u')
+	{
+		for(c = 'A'; <= 'Z'; ++C)
+			printf("%c", c);
+	}else if (c == 'L' || c == 'l')
+	{
+		for(c = 'a'; c <= 'z'; ++c)
+			printf("%c", c);
+	}else{
+		print("Error Char");
+	}
+	return (0)
 }
