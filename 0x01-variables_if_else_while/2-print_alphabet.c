@@ -10,11 +10,11 @@
 
 int main(void)
 {
-	char c;
+	int c;
 
-	for (c = 'a'; c <= 'z'; ++c)
-		putchar(c);
-		putchar("\n");
+	for (c = 97; c <= 122; c++)
+		
+		printf("%c\n", c);
 
 	return (0);
 }
