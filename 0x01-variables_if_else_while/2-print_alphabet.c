@@ -13,7 +13,7 @@ int main(void)
 	if (lower = 'a' && lower <= 'z'){
 		lower++;
 	}
-	putchat(lower);
+	putchar(lower);
 	putchar("\n");
 
 	return (0);
