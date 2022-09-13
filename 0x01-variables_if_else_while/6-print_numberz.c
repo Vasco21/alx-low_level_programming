@@ -8,14 +8,12 @@
  */
 int main(void)
 {
-	int n = 1024;
+	int num;
 	
-	while(n != 0)
-	{
-		int d = n % 10;
-		n = n / 10;
-		write(1, &d, 1);
-	}
+	for (num = 0; num < 10; num++)
+		putchar((num % 10) + '0');
+
+	putchar('\n');
 
 	return (0);
 }
