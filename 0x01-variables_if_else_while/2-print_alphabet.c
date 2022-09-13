@@ -8,13 +8,9 @@
  * Return: Always 0 (Success)
  */
 
-int main(void)
-{
-	char low;
-
-	for (low = 'a'; low <= 'z'; low++)
-		putchar(low);
-		putchar('\n');
-
+int main(void){
+	char c;
+	for (c = 'a'; c <= 'z'; ++c)
+		printf("%c ", c);
 	return (0);
 }
