@@ -10,24 +10,26 @@ int main(void)
 {
 	char i, j, k;
 	
-	while (i <= '7') 
+	while (i <= '7')
 	{
+		
 		j = i + 1;
+
 		while (j <= '8') 
 		{
        
 		       	k = j + 1;
-        	while (k <= '9') 
-		{
-            
-			putchar(i);
-            		putchar(j);
-            		putchar(k);
-            		putchar(',');
-            		putchar(' ');
-		k++;
-		}
-		j++;
-    	}
-    	i++;
+       			while (k <= '9') 
+			{
+				putchar(i);
+				putchar(j);
+				putchar(k);
+				putchar(',');
+				putchar(' ');
+				k++;
+			}
+			j++;
+    		}
+		i++;
+	}
 }
