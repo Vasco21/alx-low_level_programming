@@ -8,14 +8,11 @@
  */
 int main(void)
 {
-	int n, k, i;
+	int n;
 
-	for (i = 0; n != 0; i++)
-	{
-		k = n % 10;
-		printf("\n%d", k);
-		n = n / 10;
-	}
+	for (n = '0' n <= '9'; n++)
+		putchar(n);
+	printf("\n");
 
 	return (0);
 }
