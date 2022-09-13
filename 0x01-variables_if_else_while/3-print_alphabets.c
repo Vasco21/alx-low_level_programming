@@ -13,7 +13,6 @@ int main(void)
 	/* print uppercase letters */
 	for (ch = 'A'; ch <= 'Z'; ch++)
 		printf("%c", ch);
-	printf("\n");
 	/* print lowercase letters */
 	for (ch = 'a'; ch <= 'z'; ch++)
 		printf("%c", ch);
