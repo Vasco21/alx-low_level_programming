@@ -10,10 +10,12 @@
 
 int main(void)
 {
-	int c;
+	char c;
 
-	for (c = 97; c <= 122; c++)
-		write(1, %c, 26;
+	for (c = 'a'; c <= 'z'; c++)
+	{
+		write(1, &c, 26);
+	}
 
 	return (0);
 }
