@@ -8,11 +8,14 @@
  */
 int main(void)
 {
-	int n;
-
-	for (n = '0' n <= '9'; n++)
-		printf("%d", n);
-	printf("\n");
+	int n = 1024;
+	
+	while(n != 0)
+	{
+		int d = n % 10;
+		n = n / 10;
+		printf("%d\n", d);
+	}
 
 	return (0);
 }
