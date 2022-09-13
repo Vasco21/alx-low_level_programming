@@ -1,35 +1,24 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
-/**
- *  * main - Entry point
- *   *
- *    * Return: Always 0 (Success)
- *     */
+#include <stdio.h>                                                                                                                                      
+#include <stdlib.h>                                                                                                                                     
+#include <time.h>                                                                                                                                       
+/**                                                                                                                                                     
+ *  * main - Entry point                                                                                                                                
+ *   *                                                                                                                                                  
+ *    * Return: Always 0 (Success)                                                                                                                      
 int main(void)
 {
-	char i, j, k;
-	
-	while (i <= '7')
-	{
-		
-		j = i + 1;
+	int d;
 
-		while (j <= '8') 
+	for (d = '0'; d <= '9'; d++)
+	{
+		putchar(d);
+		if (d != '9')
 		{
-       
-		       	k = j + 1;
-       			while (k <= '9') 
-			{
-				putchar(i);
-				putchar(j);
-				putchar(k);
-				putchar(',');
-				putchar(' ');
-				k++;
-			}
-			j++;
-    		}
-		i++;
+			printf(',');
+			putchar(' ');
+		}
 	}
+	putchar('\n');
+
+	return (0);
 }
