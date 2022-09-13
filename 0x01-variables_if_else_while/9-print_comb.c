@@ -8,6 +8,7 @@
  *     */
 int main(void)
 {
+	char i, j, k;
 	
 	while (i <= '7') 
 	{
