@@ -11,11 +11,11 @@
 
 int main(void)
 {
-	char low;
+	int n;
 
-	for (low = 'a'; low <= 'z'; low++)
-		putchar(low);
-		printf("\n");
-
-	return (0);
+	for (n = 'a'; n <= 'z'; n++)
+		{
+			_putchar(n);
+		}
+		_putchar('\n');
 }
