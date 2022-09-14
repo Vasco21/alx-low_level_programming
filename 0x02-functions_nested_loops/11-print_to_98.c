@@ -2,7 +2,7 @@
  * File: 1-alphabet.c
  * Auth: Vasco Eti
  */
-
+#include <stdio.h>
 #include "main.h"
 
 /**
