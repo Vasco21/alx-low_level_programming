@@ -1,19 +1,15 @@
 #include <unistd.h>
 #include "main.h"
-
 /**
+ * main - Prints "HeloWorld" followed by a new line.
  *
- * _putchar - writes the character
- *
- * Discretion: it print character
- * return 0
+ * Return: Always 0.
  */
 int main(void)
 {
 
 	_putchar('H');
 	_putchar('e');
-	_putchar('l');
 	_putchar('l');
 	_putchar('0');
 	_putchar('W');
