@@ -9,19 +9,20 @@
  * jack_bauer - Prints every minute of the day of
  *              Jack Bauer, starting from 00:00 to 23:59.
  */
+
 void jack_bauer(void)
 {
-	int hour, minute;
+	int H, M;
 
-	for (hour = 0; hour <= 23; hour++)
+	for (H = 0; H < 24; H++)
 	{
-		for (minute = 0; minute <= 59; minute++)
+		for (M = 0; M < 60; M++)
 		{
-			_putchar((hour / 10) + '0');
-			_putchar((hour % 10) + '0');
+			_putchar((H / 10) + '0');
+			_putchar((H % 10) + '0');
 			_putchar(':');
-			_putchar((minute / 10) + '0');
-			_putchar((minute % 10) + '0');
+			_putchar((M / 10) + '0');
+			_putchar((M % 10) + '0');
 			_putchar('\n');
 		}
 	}
