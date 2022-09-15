@@ -1,10 +1,12 @@
+
+
 /*
- * File: 1-alphabet.c
- * Auth: Vasco Eti
+ * File: 101-natural.c
+* Auth: Vasco Eti
  */
 
-#include "main.h"
 #include <stdio.h>
+
 /**
  * main - Lists all the natural numbers below 1024 (excluded)
  *        that are multiples of 3 or 5.
@@ -12,17 +14,21 @@
  * Return: Always 0.
  */
 
-int main(void)
+#include <stdio.h>
+
+int main ( void )
 {
-	int  i;
-	int total = 0;
+	int sum = 0;
 
-	for (i = 0; i < 1024; i++)
+	for (int i = 0; i < 1000; i += 5)
 	{
-		if ((i % 3) == 0 || (i % 5) == 0)
-			total += 1;
+		sum += i;
 	}
-	printf("%d\n", total);
-
-	return (0);
+    	for (int i = 0; i < 1000; i += 3)
+	{
+		if (i % 5) sum += i;  /* already counted */
+    	}
+	printf("%d\n", sum);
+	
+	return 0;
 }
