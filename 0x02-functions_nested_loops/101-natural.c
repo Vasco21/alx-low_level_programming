@@ -1,5 +1,3 @@
-
-
 /*
  * File: 101-natural.c
 * Auth: Vasco Eti
@@ -13,22 +11,17 @@
  *
  * Return: Always 0.
  */
-
-#include <stdio.h>
-
-int main ( void )
+int main(void)
 {
-	int sum = 0;
+	int i, sum = 0;
 
-	for (int i = 0; i < 1000; i += 5)
+	for (i = 0; i < 1024; i++)
 	{
-		sum += i;
+		if ((i % 3) == 0 || (i % 5) == 0)
+			sum += i;
 	}
-    	for (int i = 0; i < 1000; i += 3)
-	{
-		if (i % 5) sum += i;  /* already counted */
-    	}
+
 	printf("%d\n", sum);
-	
-	return 0;
+
+	return (0);
 }
