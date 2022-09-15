@@ -19,8 +19,8 @@ void print_times_table(int n)
 	{
 		for (j = 1; j <= n; j++)
 		{
-			_putchar("%dx%d = %d, ",j,i,i*j)
+			printf("%dx%d = %d, ",j,i,i*j)
 		}
-		_putchar("\n")
+		printf("\n")
 	}
 }
