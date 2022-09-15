@@ -1,6 +1,6 @@
 
 /*
- * File: 1-alphabet.c
+ * File: 4-isalpha.c
  * Auth: Vasco Eti
  */
 

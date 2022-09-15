@@ -1,5 +1,5 @@
 /*
- * File: 1-alphabet.c
+ * File: 9-times_table.c
  * Auth: Vasco Eti
  */
 

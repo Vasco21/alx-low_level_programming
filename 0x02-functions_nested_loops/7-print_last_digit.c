@@ -1,6 +1,6 @@
 
 /*
- * File: 1-alphabet.c
+ * File: 7-print_last_digit.c
  * Auth: Vasco Eti
  */
 
