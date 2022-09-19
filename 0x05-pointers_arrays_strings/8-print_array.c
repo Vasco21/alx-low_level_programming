@@ -1,9 +1,11 @@
 /*
- * File: print_array.c
+ *File : print_array.c
  * Auth: Vasco Eti
  */
 
 #include "main.h"
+
+#include <stdio.h>
 
 /**
  * print_array - a function that prints n elements of an array of integers,
