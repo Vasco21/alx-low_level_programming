@@ -1,7 +1,7 @@
 /*
- *  * File: strlen.c
- *   * Auth: Vasco Eti
- *    */
+ * File: strlen.c
+ * Auth: Vasco Eti
+ */
 
 #include "main.h"
 /**
