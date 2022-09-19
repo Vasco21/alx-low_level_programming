@@ -1,10 +1,9 @@
-/*                                                                                                                                                      
- * File: _put.c
- * Auth: Vasco Eti 
- */                                                                                                                                                     
+/*
+ * File: puts.c
+ * Auth: Vasco Eti
+ */
 
-#incluce "main.h"
-
+#include "main.h"
 
 /**
  * _puts - Write a function that prints a string, followed
