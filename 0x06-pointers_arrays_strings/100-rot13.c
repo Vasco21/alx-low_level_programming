@@ -1,4 +1,4 @@
-i/*
+/*
  * File:rot23.c
  *Auth: Vasco Eti
  */
