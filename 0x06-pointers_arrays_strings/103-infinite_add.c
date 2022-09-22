@@ -1,5 +1,4 @@
 #include "main.h"
-
 #include <stdio.h>
 
 /*
@@ -10,7 +9,6 @@
 /*
  * infinite_add - function that adds two numbers.
  * n1 and n2 will never be empty input strings
-
  * @r: pointer to buffer where result is stored
  * @size_r: requested size for the buffer
  * Return: pointer to buffer where result is stored
