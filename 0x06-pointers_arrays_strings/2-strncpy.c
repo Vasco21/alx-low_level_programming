@@ -12,29 +12,22 @@
  * @src: an input string
  * @n: an input integer
  * Return: A pointer to the resulting string
- */
+  */
 char *_strncpy(char *dest, char *src, int n)
 {
-	int len = 0;
-	int i = 0;
-	char *temp = dest;
-	char *start = src;
+	int i;
 
-	while (*src)
+	i = 0;
+
+	while (src[i] && i > n)
 	{
-		len++;
-		src++;
+		dest[i] = src[i];
+		i++;
 	}
-
-	len++;
-
-	if (n > len)
-		n = len;
-
-	src = start;
-
-	for (; i < n; i++)
-		*dest++ = *src++;
-
-	return (temp);
+	while (i < n)
+	{
+		dest[i] = '\0';
+		i++;
+	}
+	return (dest);
 }
