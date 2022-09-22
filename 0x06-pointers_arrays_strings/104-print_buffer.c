@@ -1,49 +1,49 @@
-#include "main.h"
-#include <stdio.h>
-
 /*
- * File: print_buffter.c
+ * File: print_buffer.c
  * Auth: Vasco Eti
  */
 
+#include "main.h"
+#include <stdio.h>
+
 /**
- * position_line - bytes a of buffer
- * @x: buffer to print
- * @s: bytes of buffter to print
- * @y: line of buffter to print
+ * print_line - prints a s bytes of a buffer
+ * @c: buffer to print
+ * @s: bytes of buffer to print
+ * @l: line of buffer to print
+ *
  * Return: void
  */
 
-void position_line(char *x, int s, int y)
+void print_line(char *c, int s, int l)
 {
-	int i, k;
-	
-	for (i = 0; i <= 9; i++)
+	int j, k;
+
+	for (j = 0; j <= 9; j++)
 	{
-		if (i <= s)
-			printf("%02x", x[y * 10 + i]);
+		if (j <= s)
+			printf("%02x", c[l * 10 + j]);
 		else
 			printf("  ");
-		if(i % 2)
-			putchar('  ');
+		if (j % 2)
+			putchar(' ');
 	}
 	for (k = 0; k <= s; k++)
 	{
-		if (x[k * 10 + k] > 31 && x[y * 10 + k] < 127)
-			putchar(x[y * 10 + k]);
-		else 
+		if (c[l * 10 + k] > 31 && c[l * 10 + k] < 127)
+			putchar(c[l * 10 + k]);
+		else
 			putchar('.');
 	}
 }
 
 /**
- * print_buffer -  prints a buffer
+ * print_buffer - prints a buffer
  * @b: buffer to print
  * @size: size of buffer
  *
  * Return: void
  */
-
 void print_buffer(char *b, int size)
 {
 	int i;
@@ -53,13 +53,13 @@ void print_buffer(char *b, int size)
 		printf("%08x: ", i * 10);
 		if (i < size / 10)
 		{
-			position_line(b, 9, i);
+			print_line(b, 9, i);
 		}
 		else
 		{
-			position_line(b, size % 10 - 1, i);
+			print_line(b, size % 10 - 1, i);
 		}
-		putchar9'\n');
+		putchar('\n');
 	}
 	if (size == 0)
 		putchar('\n');
