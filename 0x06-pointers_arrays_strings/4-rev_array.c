@@ -1,8 +1,3 @@
-/*
- * File: rev_array.c
- * Auth: Vasco Eti 
- */
-
 #include "main.h"
 
 /**
@@ -11,17 +6,18 @@
  * @n: number of elements of array
  * Return: Nothing
  */
+
 void reverse_array(int *a, int n)
 {
-	int i, temp;
+	int i = 0, temp;
 
-	i = temp =  0;
-	n -= 1;
-
-	while (i <= n)
+	n = n - 1;
+	while (i < n)
 	{
-		temp = a[n];
-		a[n--] = a[i];
-		a[i++] = temp;
+		t = *(a + i);
+		*(a + i) = *(a + n);
+		*(a + n) = temp;
+		i++;
+		n--;
 	}
 }
