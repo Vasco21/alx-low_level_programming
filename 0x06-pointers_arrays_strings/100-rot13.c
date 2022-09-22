@@ -12,13 +12,22 @@
  */
 char *rot13(char *s)
 {
-	int i;
+	int i, j;
+	char r[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
+	char alpha[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+	char boolean;
 
-	for (i=0; i<strlen(s); i++)
+	for (i = 0; s[i] != '\0'; i++)
 	{
-		 if ((*s >= 'a' && *s < 'n') || (*s >= 'A' && *s < 'N'))
-			 *S += 13;
-		 else
-			 *s -+ 13;
+		boolean = 0;
+		for (j = 0; alpha[j] != '\0' && boolean == 0; j++)
+		{
+			if (s[i] == alpha[j])
+			{
+				s[i] = r[j];
+				boolean = 1;
+			}
+		}
 	}
+	return (s);
 }
