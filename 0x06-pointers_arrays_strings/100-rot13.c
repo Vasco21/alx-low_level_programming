@@ -13,19 +13,17 @@
 char *rot13(char *s)
 {
 	int i, j;
-	char r[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
-	char alpha[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
-	char boolean;
+	char a[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+	char b[] = "nopqrstuvwxyzabcdefghijklmNOPQRSTUVWXYZABCDEFGHIJKLM";
 
-	for (i = 0; s[i] != '\0'; i++)
+	for (i = 0; *(s + i); i++)
 	{
-		boolean = 0;
-		for (j = 0; alpha[j] != '\0' && boolean == 0; j++)
+		for (j = 0; j < 52; j++)
 		{
-			if (s[i] == alpha[j])
+			if (a[j] == *(s + i))
 			{
-				s[i] = r[j];
-				boolean = 1;
+				*(s + i) = b[j];
+				break;
 			}
 		}
 	}
