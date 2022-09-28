@@ -8,33 +8,33 @@
 #include <unistd.h>
 
 /**
- * _strspn - gets the length of a prefix substring
- *
- * @s: segment to return bytes from
- * @accept: the bytes to include
- *
- * Return: the number of bytes in the initial segment of @s which consist only
- * of bytes from @accept
+ * _strspn - a function that gets the length of a prefix substring.
+ * @s: an input string
+ * @accept: an input character with to locate into string s
+ * Return: returns pointer to c position
  */
-
 unsigned int _strspn(char *s, char *accept)
 {
-	int i, j;
-	int c = 0;
+	int count = 0, x;
+	char *str = accept;
 
-	for (i = 0; s[i] != '\0'; i++)
+	while (*s)
 	{
-		if (s[i] != 32)
+		x = 0;
+		while (*accept)
 		{
-			for (j = 0; accept[j] != '\0'; j++)
+			if (*accept == *s)
 			{
-				if (s[i] == accept[j])
-					c++;
+				count++;
+				x = 1;
+				break;
 			}
+			accept++;
 		}
-		else
-			return (c);
-
+		s++;
+		accept = str;
+		if (x == 0)
+			break;
 	}
-	return (c);
+	return (count);
 }
