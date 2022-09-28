@@ -1,34 +1,35 @@
 /*
- * File: strstrc.c
+ * File: strstr.c
  * Auth: Vasco Eti
  */
 
 #include <unistd.h>
-
 #include <stdio.h>
 
 /**
- * _strpbrk -  a function that searches a string for any of a set of bytes.
- * @s: an input string
- * @accept: an input character with to locate into string s
- * Return:  a pointer to the byte in s that matches one of the bytes in accept,
- * or NULL if no such byte is found
+ * _strstr -  a function that locates a substring.
+ * @haystack: an input string to search in
+ * @needle: an input string to locate into string haystack
+ * Return:  a pointer to the beginning of the located substring,
+ * or NULL if the substring is not found.
  */
-char *_strpbrk(char *s, char *accept)
+char *_strstr(char *haystack, char *needle)
 {
-	char *start = accept;
+	char *startn = needle, *starth = haystack;
 
-	while (*s)
+	while (*haystack)
 	{
-		while (*accept)
+		starth = haystack;
+		needle = startn;
+		while (*haystack == *needle)
 		{
-			if (*accept == *s)
-				return (s);
-			accept++;
+			haystack++;
+			needle++;
 		}
 
-		accept = start;
-		s++;
+		if (*needle == '\0')
+			return (haystack);
+		haystack = starth + 1;
 	}
 	return (NULL);
 }

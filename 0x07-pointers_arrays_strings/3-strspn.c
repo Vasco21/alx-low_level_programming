@@ -1,3 +1,5 @@
+
+
 /*
  * File: Strspn.c
  * Auth: Vasco Eti
@@ -6,33 +8,33 @@
 #include <unistd.h>
 
 /**
- * _strspn - a function that gets the length of a prefix substring.
- * @s: an input string
- * @accept: an input character with to locate into string s
- * Return: returns pointer to c position
+ * _strspn - gets the length of a prefix substring
+ *
+ * @s: segment to return bytes from
+ * @accept: the bytes to include
+ *
+ * Return: the number of bytes in the initial segment of @s which consist only
+ * of bytes from @accept
  */
+
 unsigned int _strspn(char *s, char *accept)
 {
-	int count = 0, x;
-	char *str = accept;
+	int i, j;
+	int c = 0;
 
-	while (*s)
+	for (i = 0; s[i] != '\0'; i++)
 	{
-		x = 0;
-		while (*accept)
+		if (s[i] != 32)
 		{
-			if (*accept == *s)
+			for (j = 0; accept[j] != '\0'; j++)
 			{
-				count++;
-				x = 1;
-				break;
+				if (s[i] == accept[j])
+					c++;
 			}
-			accept++;
 		}
-		s++;
-		accept = str;
-		if (x == 0)
-			break;
+		else
+			return (c);
+
 	}
-	return (count);
+	return (c);
 }
