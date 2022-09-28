@@ -3,7 +3,7 @@
  * Auth: Vasco Eti
  */
 
-#include <unistd.h>
+#include "main.h"
 
 /*
  * _memset - a function that fills memory with constant bytes
@@ -14,12 +14,14 @@
  */
 char *_memset(char *s, char b, unsigned int n)
 {
-	char *str = s;
+	unsigned char   *placeholder;
 
-	while (n--)
+	placeholder = (unsigned char *)s;
+	while (n > 0)
 	{
-		*s = b;
-		s++;
+		*placeholder = (unsigned char)b;
+		placeholder++;
+		n++;
 	}
-	return (str);
+	return (s)
 }
