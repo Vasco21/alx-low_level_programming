@@ -3,7 +3,7 @@
  * Auth : Vasco Eti
  */
 
-#include <unistd.h>
+#include "main.h"
 /**
  * print_chessboard - prints the chessboard
  *
