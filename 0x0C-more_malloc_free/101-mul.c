@@ -2,8 +2,7 @@
  * Auth: Vasco Eti
  */
 
-#include <stdio.h>
-#include <stdlib.h>
+#include "main.h"
 
 /**
  * main - Check the code
