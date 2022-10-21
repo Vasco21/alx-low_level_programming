@@ -1,8 +1,3 @@
-/*
- * Auth: Vasco Eti
- */
-
-
 #include "lists.h"
 #include <stdio.h>
 
