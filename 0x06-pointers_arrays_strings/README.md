@@ -1,1 +1,0 @@
-pointer arrray and string
