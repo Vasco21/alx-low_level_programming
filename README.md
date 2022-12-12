@@ -1,1 +1,1 @@
-My hello world task
+Variadic functions
