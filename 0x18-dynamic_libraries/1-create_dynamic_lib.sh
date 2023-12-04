@@ -1,2 +1,4 @@
 #!/bin/bash
-gcc -fPIC *.c -shared -o liball.so
+gcc -Wall -Wextra -Werror -pedantic -c -fPIC *.c
+gcc -shared -o liball.so *.o
+export LD_LIBRABY_PATH=.:$LD_LIBRABY_PATH
